@@ -1,0 +1,30 @@
+
+> beerapp@1.0.0 start
+> nodemon server.js
+
+[33m[nodemon] 2.0.6[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+node:events:306
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:188:8)
+    at errorOrDestroy (node:internal/streams/destroy:251:7)
+    at node:internal/fs/streams:193:9
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:550:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+npm ERR! code 1
+npm ERR! path /home/peter/dev/beerapp/BeerAPI
+npm ERR! command failed
+npm ERR! command sh -c nodemon server.js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/peter/.npm/_logs/2020-11-15T06_49_42_478Z-debug.log
