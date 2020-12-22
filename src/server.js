@@ -8,7 +8,7 @@ const routes = require('./routes/beerRoutes')
 
 mongoose.Promise = global.Promise
 mongoose.set('useFindAndModify', false)
-mongoose.connect('mongodb://localhost/Vuecrudapp', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/beerapp', { useNewUrlParser: true })
 
 const port = process.env.PORT || 3000
 const app = express()

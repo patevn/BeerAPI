@@ -4,13 +4,13 @@ const { Schema } = mongoose
 
 const beerSchema = new Schema(
   {
-    beer1: {
+    beer: {
       type: String,
-      required: 'beer1 cannot be blank',
+      required: 'beer cannot be blank',
     },
-    beer2: {
+    details: {
       type: String,
-      required: 'beer2  cannot be blank',
+      required: 'details  cannot be blank',
     },
   },
   { collection: 'beer' }
