@@ -12,6 +12,9 @@ const beerSchema = new Schema(
       type: String,
       required: 'details  cannot be blank',
     },
+    rating: {
+      type: String,
+    },
   },
   { collection: 'beer' }
 )
